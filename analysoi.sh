@@ -10,7 +10,7 @@ find . -type f -name "*.css" | grep -q . && echo "- CSS" >> analysis_report.txt
 
 echo " " >> analysis_report.txt
 
-echo "Design patterns detected:" > analysis_report.txt
+echo "Design patterns detected:" >> analysis_report.txt
 
 grep -R "getInstance" -n . && echo "- Singleton" >> analysis_report.txt
 grep -R "create[A-Z]" -n . && echo "- Factory Method" >> analysis_report.txt
