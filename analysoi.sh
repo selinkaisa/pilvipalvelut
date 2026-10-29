@@ -1,10 +1,10 @@
 echo "Detected languages:" > analysis_report.txt
-find . -type f -name "*.py" | grep -q . && echo "- Python"
-find . -type f -name "*.java" | grep -q . && echo "- Java"
-find . -type f -name "*.js" | grep -q . && echo "- JavaScript"
-find . -type f -name "*.ts" | grep -q . && echo "- TypeScript"
-find . -type f -name "*.html" | grep -q . && echo "- HTML"
-find . -type f -name "*.css" | grep -q . && echo "- CSS"
+find . -type f -name "*.py" | grep -q . && echo "- Python" >> analysis_report.txt
+find . -type f -name "*.java" | grep -q . && echo "- Java" >> analysis_report.txt
+find . -type f -name "*.js" | grep -q . && echo "- JavaScript" >> analysis_report.txt
+find . -type f -name "*.ts" | grep -q . && echo "- TypeScript" >> analysis_report.txt
+find . -type f -name "*.html" | grep -q . && echo "- HTML" >> analysis_report.txt
+find . -type f -name "*.css" | grep -q . && echo "- CSS" >> analysis_report.txt
 
 echo "Design patterns detected:" > analysis_report.txt
 
