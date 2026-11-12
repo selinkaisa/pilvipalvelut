@@ -89,9 +89,8 @@ function App() {
           <img src={viteLogo} className="vite" alt="Vite logo" />
         </div>
 
-        <h1>You have a fun codename in Local Storage!</h1>
+        <h1>Tervetuloa, {codename}</h1>
 
-        <p>Tervetuloa, {codename}</p>
 
         <button
           type="button"
@@ -100,8 +99,6 @@ function App() {
         >
           Generate a new codename!
         </button>
-
-        <p>Your codename: {codename}</p>
 
         <button type="button" onClick={handleLogout}>
           Kirjaudu ulos
