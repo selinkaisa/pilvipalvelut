@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/pilvipalvelut/week6/dist/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>websovellus</title>
+    <script type="module" crossorigin src="/pilvipalvelut/week6/dist/assets/index-BnOVaNYE.js"></script>
+    <link rel="stylesheet" crossorigin href="/pilvipalvelut/week6/dist/assets/index-Ce4e_Gn8.css">
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script>
+      if (localStorage.getItem('consent') === 'true') {
+        var beacon = document.createElement('script');
+        beacon.type = 'module';
+        beacon.src = 'https://static.cloudflareinsights.com/beacon.min.js';
+        beacon.setAttribute('data-cf-beacon', '{"token": "6816ab79d80144b681cc7c0898709240"}');
+        document.body.appendChild(beacon);
+      }
+    </script>
+  </body>
+</html>
