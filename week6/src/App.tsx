@@ -18,6 +18,7 @@ import {
 import { type Session } from './types/Session'
 import { useCloudflareAnalytics } from './hooks/useCloudflareAnalytics'
 import './App.css'
+import InfoText from './components/InfoText'
 
 function RouteAnalytics() {
   const { trackEvent } = useCloudflareAnalytics()
@@ -248,6 +249,7 @@ function App() {
     <>
       <RouteAnalytics />
       <AppContent />
+      <InfoText />
     </>
   )
 }
